@@ -502,4 +502,77 @@
 }
 .price-card__features li.active::before {
   background: url("check") no-repeat center/contain;
+}
+
+/* Section get in touch*/
+.get-in-touch {
+  background-color: #252B42;
+  padding: 80px 0;
+}
+.get-in-touch__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .get-in-touch__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.get-in-touch__text {
+  color: #FFFFFF;
+}
+.get-in-touch__text .get-in-touch__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.get-in-touch__text .get-in-touch__descr {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+.get-in-touch__form {
+  display: flex;
+  width: 100%;
+  max-width: 450px;
+}
+.get-in-touch__form input {
+  flex-grow: 1;
+  padding: 15px 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background-color: #F9F9F9;
+  font-size: 14px;
+}
+.get-in-touch__form input::-moz-placeholder {
+  color: #737373;
+}
+.get-in-touch__form input::placeholder {
+  color: #737373;
+}
+.get-in-touch__form button {
+  background-color: #23A6F0;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.get-in-touch__form button:hover {
+  background-color: rgb(14.2978723404, 139.1659574468, 209.7021276596);
+}
+@media (max-width: 480px) {
+  .get-in-touch__form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .get-in-touch__form input, .get-in-touch__form button {
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

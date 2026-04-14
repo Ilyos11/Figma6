@@ -532,6 +532,96 @@ $light-blue: #8EC2F2;
 
 
 
+/* Section get in touch*/
+.get-in-touch {
+    background-color: $dark-blue; // Тот же темно-синий цвет из переменных
+    padding: 80px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        // Адаптив на 768px
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        color: $white;
+        
+        .get-in-touch__title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .get-in-touch__descr {
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.8;
+        }
+    }
+
+    &__form {
+        display: flex;
+        width: 100%;
+        max-width: 450px;
+
+        input {
+            flex-grow: 1;
+            padding: 15px 20px;
+            border: 1px solid #E6E6E6;
+            border-radius: 5px 0 0 5px; // Скругление только слева
+            outline: none;
+            background-color: #F9F9F9;
+            font-size: 14px;
+
+            &::placeholder {
+                color: $gray;
+            }
+        }
+
+        button {
+            background-color: $blue;
+            color: $white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 0 5px 5px 0; // Скругление только справа
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: darken($blue, 10%);
+            }
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            gap: 10px;
+            
+            input, button {
+                border-radius: 5px; // На совсем маленьких экранах разделяем
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
