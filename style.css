@@ -317,4 +317,63 @@
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Section FAq */
+.faq {
+  padding: 100px 0;
+  background-color: #FAFAFA;
+}
+.faq__header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.faq__header .faq__title {
+  font-size: 40px;
+  color: #252B42;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.faq__header .faq__subtitle {
+  font-size: 14px;
+  color: #737373;
+  line-height: 1.5;
+}
+.faq__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .faq__grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.faq-card {
+  background: #FFFFFF;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+.faq-card__icon img {
+  width: 10px;
+  margin-top: 5px;
+}
+.faq-card__content .faq-card__question {
+  font-size: 16px;
+  font-weight: 700;
+  color: #252B42;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.faq-card__content .faq-card__answer {
+  font-size: 14px;
+  color: #737373;
+  line-height: 1.6;
 }/*# sourceMappingURL=style.css.map */
